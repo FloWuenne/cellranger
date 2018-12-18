@@ -531,6 +531,7 @@ class STAR:
             '--outSAMmultNmax', str(max_report_alignments_per_read),
             '--runThreadN', str(threads),
             '--readNameSeparator', 'space',
+            '--outFilterMismatchNmax', '0', ## Manually added to ensure no mismatches for sgRNA libraries like those for cropseq fw_20181218
             '--outSAMunmapped', 'Within',
             '--outSAMtype', 'SAM',
             '--outStd', 'SAM',
